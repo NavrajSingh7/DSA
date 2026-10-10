@@ -1,0 +1,16 @@
+# Compiled executable files
+*.exe
+
+# Object files
+*.o
+*.obj
+
+# Debug symbols
+*.pdb
+
+# Common build output directories
+build/
+cmake-build-*/
+
+# Local clangd configuration
+.clangd
