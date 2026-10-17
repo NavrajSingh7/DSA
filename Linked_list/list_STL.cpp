@@ -60,6 +60,7 @@ int main(){
     cout << l6.front() << endl;          //1
     cout << l6.back() << endl;           //5
     cout << *next(l6.begin(), 2);        //4
+    cout << endl;
 
     // Updating Elements
     l6.front() = 11;                     //{11,3,4,2,5}
@@ -71,7 +72,8 @@ int main(){
     auto itr3 = find(l6.begin(), l6.end(), 4);
     if (itr3 != l6.end()) cout << "Found " <<*itr3;
     else cout << "Element Not Found!";
-
+    cout << endl;
+    
     // Printing
     print(l3);
     // OR
