@@ -4,6 +4,8 @@
 #include<algorithm>         // to use find()
 using namespace std;
 
+void print(const list<int>& l3);
+
 int main(){
     
     list<int> l0;           //initialize int list, size 0
@@ -70,5 +72,21 @@ int main(){
     if (itr3 != l6.end()) cout << "Found " <<*itr3;
     else cout << "Element Not Found!";
 
+    // Printing
+    print(l3);
+    // OR
+    for(int x : l3){
+        cout << x << ' ';
+    }
+    cout << endl;
+
     return 0;
+}
+
+void print(const list<int>& l3){
+    // Traversing and print
+    for(auto it = l3.begin(); it != l3.end(); ++it){
+        cout << *it << ' ';
+    }
+    cout << endl;
 }
